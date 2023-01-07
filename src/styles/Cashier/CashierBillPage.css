@@ -1,0 +1,145 @@
+
+.backgroundColour {
+
+    -fx-background-color: linear-gradient(to bottom, #99ccff 0%, #ccccff 100%);
+}
+
+
+
+
+
+/*BillButton*/
+.button3 {
+    -fx-background-color:  linear-gradient(to bottom, #009999 1%, #00cc99 100%);
+    -fx-background-radius: 9 9 9 9;
+}
+
+.button3:hover {
+    -fx-background-color: linear-gradient(to bottom, #009999 1%, #00ff00 100%);
+    -fx-background-radius: 9 9 9 9;
+}
+
+.button3:pressed {
+    -fx-background-color: linear-gradient(to bottom, #009999 1%, #00cc99 100%);
+    -fx-background-radius: 9 9 9 9;
+}
+
+
+
+/*Table Styles Start*/
+.table-view:focused {
+    -fx-background-insets: 0px;
+}
+
+.table-view .column-header {
+    -fx-size: 30px;
+    -fx-background-color: #3742fa;
+    -fx-background-radius: 4 4 4 4;
+
+
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+}
+
+.table-view .table-row-cell:empty {
+    -fx-background-color: white;
+}
+
+.table-view .table-row-cell:selected {
+    -fx-background-color: linear-gradient(to right, rgba(119, 8, 245, 0.29), rgba(15, 93, 255, 0.39));
+}
+
+.table-view .table-row-cell:selected * {
+    -fx-font-weight: bold;
+    -fx-text-fill: rgb(54, 49, 49);
+}
+
+.actionIcon {
+    -fx-cursor: hand;
+    -fx-text-fill: red;
+}
+
+/* Table styles ends */
+
+
+
+.button1 {
+    -fx-background-color: #1B1464;
+    -fx-background-radius: 9 9 9 9;
+}
+
+.button1:hover {
+    -fx-background-color: #0652DD;
+
+    -fx-background-radius: 9 9 9 9;
+}
+
+.button1:pressed {
+    -fx-background-color: #1B1464;
+    -fx-background-radius: 9 9 9 9;
+}
+
+
+/*----------------Update Button---------------*/
+.button4 {
+    -fx-background-color:   linear-gradient(to bottom, #0000ff 1%, #0066ff 100%);
+    -fx-background-radius: 9 9 9 9;
+}
+
+.button4:hover {
+    -fx-background-color: linear-gradient(to bottom, #33ccff 1%, #ccffff 100%);
+    -fx-background-radius: 9 9 9 9;
+}
+
+.button4:pressed {
+    -fx-background-color:linear-gradient(to bottom, #0000ff 1%, #0066ff 100%);
+    -fx-background-radius: 9 9 9 9;
+}
+
+
+/*---------btn Clear--------------*/
+
+.button5 {
+    -fx-background-color:    #2f3542;
+    -fx-background-radius: 9 9 9 9;
+}
+
+.button5:hover {
+    -fx-background-color: linear-gradient(to top, #2d3436 0%, #b2bec3 100%);
+    -fx-background-radius: 9 9 9 9;
+}
+
+.button5:pressed {
+    -fx-background-color: #2f3542;
+    -fx-background-radius: 9 9 9 9;
+}
+
+/*-------------------Text Pain Part------------------*/
+
+.textPane{
+    -fx-background-color: white;
+    -fx-border-color: rgba(76, 73, 73, 0.83);
+    -fx-border-radius: 8px;
+}
+.textField{
+    -fx-background-color: white;
+    -fx-prompt-text-fill: #726d6d;
+}
+.textLabel{
+   -fx-background-color:white ;
+    -fx-padding: 0 5px 0px 5px;
+    -fx-font-weight: bold;
+
+    -fx-text-fill: rgba(76, 73, 73, 0.83);;
+}
+/*---------------------------------------------------/**/
+.textLabeluntiPrice{
+    -fx-background-color:white ;
+    -fx-padding: 0 5px 0px 5px;
+    -fx-font-weight: bold;
+-fx-text-fill: red;
+    /*-fx-text-fill: rgba(76, 73, 73, 0.83);;*/
+}
+

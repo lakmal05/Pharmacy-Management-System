@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ProgressContext" prefHeight="213.0" prefWidth="600.0" style="-fx-background-color: #2f3542;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CashierProgressPageController">
+   <children>
+      <ProgressBar fx:id="CashierProgressbar" layoutX="51.0" layoutY="83.0" prefHeight="44.0" prefWidth="512.0">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ProgressBar>
+      <JFXButton fx:id="ProgressBtnContext" buttonType="RAISED" layoutX="182.0" layoutY="145.0" onAction="#btnOnAction" styleClass="button3" stylesheets="@../styles/Manager/ManagerSupplierUpdation.css" text="Click Hear To Contine" textFill="WHITE">
+         <font>
+            <Font name="Consolas Bold" size="17.0" />
+         </font></JFXButton>
+      <Label fx:id="MyLable" alignment="CENTER" layoutX="223.0" layoutY="55.0" prefHeight="24.0" prefWidth="154.0" textFill="#c61d1d">
+         <font>
+            <Font name="Consolas Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="249.0" layoutY="98.0" prefHeight="17.0" prefWidth="116.0" text="Processing . . . .">
+         <font>
+            <Font name="Consolas Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

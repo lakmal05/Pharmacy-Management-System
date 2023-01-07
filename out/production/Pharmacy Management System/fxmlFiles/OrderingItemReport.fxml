@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="OrderingItemReportcontext" prefHeight="570.0" prefWidth="1000.0" styleClass="backgroundColour" stylesheets="@../styles/Manager/OrderingIntemReport.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OrderingItemReportController">
+   <children>
+      <JFXButton buttonType="RAISED" layoutX="21.0" layoutY="524.0" onAction="#btnbackOnAvtion" prefHeight="29.0" prefWidth="97.0" styleClass="buttonlightBlue" text="BACK" textFill="WHITE">
+         <font>
+            <Font name="Georgia Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane layoutY="-2.0" prefHeight="55.0" prefWidth="1003.0" style="-fx-background-color: white;" stylesheets="@../styles/Manager/OrderingIntemReport.css">
+         <children>
+            <Label layoutX="846.0" layoutY="19.0" prefHeight="17.0" prefWidth="49.0" text="Date :">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font></Label>
+            <Label layoutX="50.0" layoutY="8.0" prefHeight="21.0" prefWidth="157.0" text="Ordering Reports">
+               <font>
+                  <Font name="Consolas Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="30.0" text="Home &gt; Reports" textFill="BLUE">
+               <font>
+                  <Font name="Consolas" size="14.0" />
+               </font>
+            </Label>
+            <ImageView layoutX="14.0" layoutY="11.0">
+               <image>
+                  <Image url="@../images/outline_local_shipping_black_24dp.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="672.0" layoutY="19.0" prefHeight="17.0" prefWidth="49.0" text="Time :">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTime" layoutX="721.0" layoutY="19.0" prefHeight="17.0" prefWidth="97.0" textFill="#c61d1d">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font></Label>
+            <Label fx:id="lblDate" layoutX="895.0" layoutY="19.0" prefHeight="17.0" prefWidth="108.0" textFill="#c61d1d">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow height="9.14" radius="1.7850000000000001" width="0.0" />
+         </effect>
+      </AnchorPane>
+      <TableView fx:id="tblOrderItemReport" layoutX="62.0" layoutY="141.0" prefHeight="365.0" prefWidth="893.0" styleClass="backgroundColour" stylesheets="@../styles/Manager/OrderingIntemReport.css">
+         <columns>
+            <TableColumn fx:id="colOrderId" prefWidth="102.0" text="Order Id" />
+            <TableColumn fx:id="colSupplierId" prefWidth="87.0" text="Supplier ID" />
+            <TableColumn fx:id="colHospitalName" prefWidth="151.0" text="Hospital Name" />
+            <TableColumn fx:id="colMedicineName" prefWidth="152.0" text="Medicine Name" />
+            <TableColumn fx:id="colQty" prefWidth="82.0" text="Drug QTY" />
+            <TableColumn fx:id="colDate" prefWidth="161.0" text="Date" />
+            <TableColumn fx:id="colAction" prefWidth="157.0" text=" Action" />
+         </columns>
+         <effect>
+            <DropShadow height="6.17" radius="2.585" width="6.17" />
+         </effect>
+      </TableView>
+      <Label layoutX="817.0" layoutY="530.0" prefHeight="17.0" prefWidth="172.0" text="www.UnionChemists.com">
+         <font>
+            <Font name="Consolas Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="339.0" layoutY="102.0" prefHeight="24.0" prefWidth="326.0" text="Ordering Item Report Table" textAlignment="CENTER">
+         <font>
+            <Font name="Courier New Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSearchOrders" layoutX="539.0" layoutY="61.0" prefHeight="25.0" prefWidth="336.0" promptText="     Search Order Item or Date" styleClass="textPane">
+         <font>
+            <Font name="Consolas" size="13.0" />
+         </font>
+      </TextField>
+      <JFXButton buttonType="RAISED" layoutX="891.0" layoutY="61.0" prefHeight="29.0" prefWidth="90.0" styleClass="buttonlightBlue" text="SEARCH" textFill="WHITE">
+         <font>
+            <Font name="Georgia Bold" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

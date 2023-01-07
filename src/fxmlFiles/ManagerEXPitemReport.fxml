@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ManagerEXPitemcontext" prefHeight="600.0" prefWidth="999.0" styleClass="backgroundColour" stylesheets="@../styles/Manager/ManagerSupplierUpdation.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManagerEXPitemReportController">
+   <children>
+      <AnchorPane layoutX="-4.0" prefHeight="50.0" prefWidth="1004.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="601.0" layoutY="18.0" text="Time :">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font></Label>
+            <Label layoutX="53.0" layoutY="5.0" prefHeight="18.0" prefWidth="152.0" text="EXP Drug Reports">
+               <font>
+                  <Font name="Consolas Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="53.0" layoutY="27.0" text="Home &gt;  Report" textFill="BLUE">
+               <font>
+                  <Font name="Consolas" size="12.0" />
+               </font>
+            </Label>
+            <ImageView layoutX="14.0" layoutY="10.0">
+               <image>
+                  <Image url="@../images/outline_report_black_24dp.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="805.0" layoutY="16.0" text="Date :">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font></Label>
+            <Label fx:id="lblTime" layoutX="677.0" layoutY="19.0" prefHeight="17.0" prefWidth="106.0" textFill="#c61d1d">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" layoutX="897.0" layoutY="17.0" prefHeight="17.0" prefWidth="93.0" textFill="#c61d1d">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <JFXButton buttonType="RAISED" layoutX="885.0" layoutY="554.0" onAction="#btnbackOnAction" prefHeight="25.0" prefWidth="87.0" styleClass="button4" text="BACK" textFill="WHITE">
+         <font>
+            <Font name="Georgia Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tblExpMedicine" layoutX="238.0" layoutY="146.0" prefHeight="356.0" prefWidth="748.0">
+         <columns>
+            <TableColumn fx:id="colMedicineId" prefWidth="85.0" text="Medicine ID" />
+            <TableColumn fx:id="colMedicineName" prefWidth="157.0" text="Medicine Name" />
+            <TableColumn fx:id="colMedicineQty" prefWidth="97.0" text="Medicine QTY" />
+            <TableColumn fx:id="colManufactureDate" prefWidth="147.0" text="Manufacture Date" />
+            <TableColumn fx:id="colExpDate" prefWidth="144.0" text="EXP Date" />
+            <TableColumn fx:id="colPrice" prefWidth="136.0" text="Price" />
+         </columns>
+         <effect>
+            <DropShadow />
+         </effect>
+      </TableView>
+      <Label layoutX="246.0" layoutY="560.0" prefHeight="17.0" prefWidth="172.0" text="www.UnionChemists.com">
+         <font>
+            <Font name="Consolas Bold" size="14.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutY="50.0" prefHeight="548.0" prefWidth="218.0" styleClass="backgroundColour">
+         <children>
+            <Label layoutX="57.0" layoutY="5.0" prefHeight="18.0" prefWidth="106.0" text="Medicine Id ">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtMedicineId" layoutX="63.0" layoutY="31.0" prefHeight="25.0" prefWidth="80.0" styleClass="textPane">
+               <font>
+                  <Font name="Georgia Bold" size="12.0" />
+               </font></TextField>
+            <Label layoutX="50.0" layoutY="85.0" prefHeight="18.0" prefWidth="112.0" text="Medicine Name">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtMedicineName" layoutX="14.0" layoutY="103.0" prefHeight="25.0" prefWidth="191.0" styleClass="textPane" />
+            <Label layoutX="40.0" layoutY="220.0" prefHeight="18.0" prefWidth="152.0" text="Manufacture Date">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtManufactureDate" layoutX="14.0" layoutY="247.0" prefHeight="27.0" prefWidth="178.0" styleClass="textPane">
+               <font>
+                  <Font name="Georgia Bold" size="12.0" />
+               </font></TextField>
+            <Label layoutX="69.0" layoutY="155.0" prefHeight="18.0" prefWidth="80.0" text="Drug Qty">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtPrice" layoutX="103.0" layoutY="304.0" prefHeight="25.0" prefWidth="93.0" styleClass="textPane">
+               <font>
+                  <Font name="Georgia Bold" size="12.0" />
+               </font></TextField>
+            <JFXButton buttonType="RAISED" layoutX="11.0" layoutY="427.0" onAction="#btnTakeArepotOnAction" prefHeight="34.0" prefWidth="184.0" styleClass="button2" text="Take a Report" textFill="WHITE">
+               <font>
+                  <Font name="Consolas Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="11.0" layoutY="482.0" onAction="#btnClearOnAction" prefHeight="32.0" prefWidth="184.0" ripplerFill="#b1b0bf" styleClass="button5" text="CLEAR" textFill="WHITE">
+               <font>
+                  <Font name="Georgia Bold" size="17.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="19.0" layoutY="307.0" prefHeight="18.0" prefWidth="87.0" text="Price RS ." textFill="RED">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtQty" layoutX="60.0" layoutY="173.0" prefHeight="27.0" prefWidth="87.0" styleClass="textPane">
+               <font>
+                  <Font name="Georgia Bold" size="12.0" />
+               </font></TextField>
+            <JFXRadioButton graphicTextGap="3.0" layoutX="46.0" layoutY="368.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="14.0" prefWidth="139.0" text="Report and Order">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </JFXRadioButton>
+         </children>
+         <effect>
+            <DropShadow height="0.0" radius="3.2675" width="15.07" />
+         </effect>
+      </AnchorPane>
+      <TextField fx:id="lblSearch" layoutX="366.0" layoutY="65.0" prefHeight="27.0" prefWidth="385.0" promptText="                 Search Expire Date" styleClass="textPane">
+         <font>
+            <Font name="Consolas Bold" size="13.0" />
+         </font>
+      </TextField>
+      <JFXButton buttonType="RAISED" layoutX="766.0" layoutY="65.0" onAction="#btnSearch" prefHeight="29.0" prefWidth="87.0" styleClass="button4" text="Search " textFill="WHITE">
+         <font>
+            <Font name="Georgia Bold" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

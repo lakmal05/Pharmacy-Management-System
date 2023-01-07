@@ -1,0 +1,39 @@
+/*Table Styles Start*/
+.table-view:focused {
+    -fx-background-insets: 0px;
+}
+
+.table-view .column-header {
+    -fx-size: 30px;
+    -fx-background-color: #079992;
+    -fx-background-radius: 4 4 4 4;
+
+
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+}
+
+.table-view .table-row-cell:empty {
+    -fx-background-color: white;
+}
+
+.table-view .table-row-cell:selected {
+    -fx-background-color: linear-gradient(to right, rgba(67, 149, 46, 0.58), rgba(165, 207, 163, 0.58));
+}
+
+.table-view .table-row-cell:selected * {
+    -fx-font-weight: bold;
+    -fx-text-fill: rgb(54, 49, 49);
+}
+
+.actionIcon {
+    -fx-cursor: hand;
+    -fx-text-fill: red;
+}
+
+/* Table styles ends */
+
+
+

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="CashierMyDetailscontext" prefHeight="600.0" prefWidth="999.0" styleClass="backgroundColour" stylesheets="@../styles/Manager/ManagerSupplierUpdation.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CahierMyDetailsController">
+   <children>
+      <AnchorPane layoutX="-5.0" layoutY="-1.0" prefHeight="52.0" prefWidth="1005.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="668.0" layoutY="18.0" text="Time :">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font></Label>
+            <Label layoutX="75.0" layoutY="8.0" prefHeight="18.0" prefWidth="107.0" text="My Details">
+               <font>
+                  <Font name="Consolas Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="75.0" layoutY="30.0" text="Home &gt; My Data" textFill="BLUE">
+               <font>
+                  <Font name="Consolas" size="13.0" />
+               </font>
+            </Label>
+            <ImageView layoutX="24.0" layoutY="7.0">
+               <image>
+                  <Image url="@../images/outline_person_black_24dp.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="841.0" layoutY="18.0" text="Date :">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" layoutX="904.0" layoutY="18.0" prefHeight="17.0" prefWidth="87.0" textFill="#c61d1d">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTime" layoutX="722.0" layoutY="20.0" prefHeight="17.0" prefWidth="87.0" textFill="#c61d1d">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <JFXButton buttonType="RAISED" layoutX="25.0" layoutY="561.0" onAction="#btnbackOnAction" prefHeight="25.0" prefWidth="87.0" styleClass="button4" text="BACK" textFill="WHITE">
+         <font>
+            <Font name="Georgia Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane layoutX="93.0" layoutY="149.0" prefHeight="364.0" prefWidth="814.0" style="-fx-background-radius: 35;" styleClass="noralBackground">
+         <children>
+            <Label layoutX="57.0" layoutY="82.0" prefHeight="17.0" prefWidth="378.0" text="Age                =   25 Years">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="57.0" layoutY="122.0" prefHeight="17.0" prefWidth="424.0" text="Gender             =   Male">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="57.0" layoutY="41.0" prefHeight="17.0" prefWidth="385.0" text="Name              =    Mr.K.S.Gunathilaka">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="54.0" layoutY="295.0" prefHeight="17.0" prefWidth="385.0" text="Salary Amount       =    RS . 75000">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="57.0" layoutY="253.0" prefHeight="17.0" prefWidth="411.0" text="Adress             =   No : 23 ,Colombo ">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="57.0" layoutY="165.0" prefHeight="17.0" prefWidth="447.0" text="E-Mail             =   gunathilaka321@gmail.com">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="57.0" layoutY="213.0" prefHeight="17.0" prefWidth="333.0" text="Contact            =    011  - 292244687">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect></AnchorPane>
+      <Label layoutX="814.0" layoutY="558.0" prefHeight="17.0" prefWidth="172.0" text="www.UnionChemists.com">
+         <font>
+            <Font name="Consolas Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="369.0" layoutY="98.0" prefHeight="21.0" prefWidth="262.0" text="Cashier 1 Private Details" textFill="RED">
+         <font>
+            <Font name="Consolas Bold" size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

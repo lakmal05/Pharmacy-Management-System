@@ -1,0 +1,89 @@
+.background{
+    -fx-background-color: linear-gradient(to bottom, #99ccff 0%, #ccccff 100%);
+}
+.background2{
+    -fx-background-color:  linear-gradient(to bottom, #ccccff 0%, #ccffff 100%);
+}
+
+
+
+
+
+
+
+
+
+.button1 {
+    -fx-background-color: #fdcb6e;
+    -fx-background-radius: 9 9 9 9;
+}
+
+.button1:hover {
+    -fx-background-color: #ffeaa7;
+
+    -fx-background-radius: 9 9 9 9;
+}
+
+.button1:pressed {
+    -fx-background-color: #fdcb6e;
+    -fx-background-radius: 9 9 9 9;
+}
+
+/*----------------Update Button---------------*/
+.buttonlightBlue {
+    -fx-background-color:   linear-gradient(to bottom, #0000ff 1%, #0066ff 100%);
+    -fx-background-radius: 9 9 9 9;
+}
+
+.buttonlightBlue:hover {
+    -fx-background-color: linear-gradient(to bottom, #33ccff 1%, #ccffff 100%);
+    -fx-background-radius: 9 9 9 9;
+}
+
+.buttonlightBlue:pressed {
+    -fx-background-color:linear-gradient(to bottom, #0000ff 1%, #0066ff 100%);
+    -fx-background-radius: 9 9 9 9;
+}
+
+
+/*----------------PlaceOrder Button---------------*/
+.buttonPlaceOrder {
+    -fx-background-color:  linear-gradient(to bottom, #009999 1%, #00cc99 100%);
+    -fx-background-radius: 9 9 9 9;
+}
+
+.buttonPlaceOrder:hover {
+    -fx-background-color: linear-gradient(to bottom, #009999 1%, #00ff00 100%);
+    -fx-background-radius: 9 9 9 9;
+}
+
+.buttonPlaceOrder:pressed {
+    -fx-background-color: linear-gradient(to bottom, #009999 1%, #00cc99 100%);
+    -fx-background-radius: 9 9 9 9;
+}
+
+
+
+
+
+
+/*----------------Logout Button---------------*/
+.buttonlogout {
+    -fx-background-color:  #c61d1d;
+    -fx-background-radius: 9 9 9 9;
+}
+
+.buttonlogout:hover {
+    -fx-background-color: linear-gradient(to bottom, #ff0066 1%, #ff6699 100%);
+
+    -fx-background-radius: 9 9 9 9;
+}
+
+.buttonlogout:pressed {
+    -fx-background-color: #c61d1d;
+    -fx-background-radius: 9 9 9 9;
+}
+
+
+
+

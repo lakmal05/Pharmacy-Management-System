@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Main-Class: AppInitializer
+Class-Path: mysql-connector-java-8.0.22.jar controlsfx-8.40.11.jar bcpro
+ v-jdk15on-1.64.jar castor-core-1.4.1.jar castor-xml-1.4.1.jar commons-b
+ eanutils-1.9.4.jar commons-collections-3.2.2.jar commons-collections4-4
+ .2.jar commons-digester-2.1.jar commons-lang3-3.4.jar commons-logging-1
+ .1.1.jar controlsfx-8.40.11.jar ecj-3.21.0.jar itext-2.1.7.js8.jar jack
+ son-annotations-2.12.2.jar jackson-core-2.12.2.jar jackson-databind-2.1
+ 2.2.jar jasperreports-6.17.0.jar javax.inject-1.jar jfoenix-8.0.10.jar 
+ jcommon-1.0.23.jar jfreechart-1.0.19.jar mysql-connector-java-5.1.49.ja
+ r mysql-connector-java-8.0.22.jar ecj-3.21.0.jar javax.inject-1.jar jco
+ mmon-1.0.23.jar jfoenix-8.0.10.jar itext-2.1.7.js8.jar castor-xml-1.4.1
+ .jar castor-core-1.4.1.jar commons-lang3-3.4.jar jfreechart-1.0.19.jar 
+ controlsfx-8.40.11.jar bcprov-jdk15on-1.64.jar jackson-core-2.12.2.jar 
+ commons-digester-2.1.jar jasperreports-6.17.0.jar commons-logging-1.1.1
+ .jar commons-beanutils-1.9.4.jar jackson-databind-2.12.2.jar commons-co
+ llections4-4.2.jar commons-collections-3.2.2.jar jackson-annotations-2.
+ 12.2.jar mysql-connector-java-5.1.49.jar mysql-connector-java-8.0.22.ja
+ r mysql-connector-java-8.0.22.jar jfoenix-8.0.8.jar
+

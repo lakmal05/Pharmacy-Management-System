@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="LoginPageContext" prefHeight="600.0" prefWidth="995.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginPageController">
+   <children>
+      <ImageView fitHeight="610.0" fitWidth="497.0" layoutX="-4.0">
+         <image>
+            <Image url="@../images/backgroundimage.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="119.0" layoutY="111.0" prefHeight="429.0" prefWidth="780.0" style="-fx-background-color: #ffffff; -fx-background-radius: 50;">
+         <children>
+            <Label layoutX="501.0" layoutY="206.0" text="Forget Password ?">
+               <font>
+                  <Font name="Consolas Bold" size="13.0" />
+               </font></Label>
+            <Label layoutX="513.0" layoutY="14.0" text="Login">
+               <font>
+                  <Font name="Constantia Bold" size="30.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="429.0" fitWidth="375.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/backgroundimage.jpg" />
+               </image>
+            </ImageView>
+            <Separator layoutX="377.0" layoutY="59.0" prefHeight="4.0" prefWidth="394.0" />
+            <Label layoutX="34.0" layoutY="304.0" prefHeight="79.0" prefWidth="335.0" text="est's take care of your health and We will cover Youer medicine">
+               <font>
+                  <Font name="Cambria Bold" size="15.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="124.0" prefWidth="206.0">
+               <children>
+                  <ImageView fitHeight="99.0" fitWidth="217.0" layoutX="4.0" layoutY="14.0">
+                     <image>
+                        <Image url="@../images/1629178484046.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </AnchorPane>
+            <Label layoutX="14.0" layoutY="314.0" prefHeight="45.0" prefWidth="40.0" text="L">
+               <font>
+                  <Font name="Cambria Bold" size="32.0" />
+               </font>
+            </Label>
+            <Circle fill="WHITE" layoutX="644.0" layoutY="215.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+            <AnchorPane layoutX="405.0" layoutY="89.0" prefHeight="34.0" prefWidth="246.0" styleClass="textPane" stylesheets="@../styles/Loginbutton.css">
+               <children>
+                  <JFXTextField fx:id="txtUserName" focusColor="#405aa8" layoutX="14.0" layoutY="10.0" onKeyReleased="#textFields_Key_Released" prefHeight="27.0" prefWidth="221.0" promptText="         User_Admin" style="-fx-background-color: white; -fx-background-radius: 40;">
+                     <font>
+                        <Font name="Consolas Bold" size="13.0" />
+                     </font>
+                  </JFXTextField>
+                  <Label layoutX="-6.0" layoutY="-8.0" prefHeight="17.0" prefWidth="81.0" styleClass="textLabel" text="User Name">
+                     <font>
+                        <Font name="Consolas Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="405.0" layoutY="155.0" prefHeight="34.0" prefWidth="246.0" styleClass="textPane" stylesheets="@../styles/Loginbutton.css">
+               <children>
+                  <JFXPasswordField fx:id="pwdPassword" layoutX="15.0" layoutY="8.0" onKeyReleased="#textFields_Key_Released" prefHeight="27.0" prefWidth="221.0" promptText="           u_XXX">
+                     <font>
+                        <Font name="Consolas Bold" size="13.0" />
+                     </font>
+                  </JFXPasswordField>
+                  <Label layoutX="-1.0" layoutY="-10.0" prefHeight="17.0" prefWidth="81.0" styleClass="textLabel" text="Password">
+                     <font>
+                        <Font name="Consolas Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="392.0" layoutY="310.0" prefHeight="54.0" prefWidth="307.0" style="-fx-background-color: white;">
+               <children>
+                  <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="5.0" onAction="#loginOnAction" prefHeight="45.0" prefWidth="279.0" stylesheets="@../styles/Loginbutton.css" text="Let's Get Started" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia Bold" size="19.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <Label layoutX="237.0" layoutY="42.0" prefHeight="32.0" prefWidth="544.0" text="THE  UNION   CHEMISTS PHARMACY" textFill="#1b1464">
+         <font>
+            <Font name="Constantia Bold" size="29.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="707.0" layoutY="6.0" prefHeight="17.0" prefWidth="110.0" textFill="#c61d1d">
+         <font>
+            <Font name="Consolas Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="866.0" layoutY="571.0" prefHeight="17.0" prefWidth="110.0" text="Version 1.0.2" textFill="#c61d1d">
+         <font>
+            <Font name="Consolas Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="571.0" prefHeight="17.0" prefWidth="172.0" text="www.UnionChemists.com">
+         <font>
+            <Font name="Consolas Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="660.0" layoutY="6.0" text="Time :">
+         <font>
+            <Font name="Consolas Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="852.0" layoutY="6.0" text="Date :">
+         <font>
+            <Font name="Consolas Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="899.0" layoutY="6.0" prefHeight="17.0" prefWidth="89.0" textFill="#c61d1d">
+         <font>
+            <Font name="Consolas Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="11.0" layoutY="15.0" prefHeight="17.0" prefWidth="97.0" text="Login Page &gt;">
+         <font>
+            <Font name="Consolas Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</AnchorPane>

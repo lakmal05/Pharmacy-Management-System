@@ -1,0 +1,166 @@
+.backgroundColour{
+    -fx-background-color: linear-gradient(to bottom, #ccccff 1%, #ffffcc 100%);
+}
+
+
+/*----------------Back Button---------------*/
+.button1 {
+    -fx-background-color: #1B1464;
+    -fx-background-radius: 9 9 9 9;
+}
+
+.button1:hover {
+    -fx-background-color: #0652DD;
+
+    -fx-background-radius: 9 9 9 9;
+}
+
+.button1:pressed {
+    -fx-background-color: #1B1464;
+    -fx-background-radius: 9 9 9 9;
+}
+
+            /*----------------Delete Button---------------*/
+.button2 {
+    -fx-background-color:  #c61d1d;
+    -fx-background-radius: 9 9 9 9;
+}
+
+.button2:hover {
+    -fx-background-color: linear-gradient(to bottom, #ff0066 1%, #ff6699 100%);
+
+    -fx-background-radius: 9 9 9 9;
+}
+
+.button2:pressed {
+    -fx-background-color: #c61d1d;
+    -fx-background-radius: 9 9 9 9;
+}
+
+
+/*----------------Insert Button---------------*/
+.button3 {
+    -fx-background-color:  linear-gradient(to bottom, #009999 1%, #00cc99 100%);
+    -fx-background-radius: 9 9 9 9;
+}
+
+.button3:hover {
+    -fx-background-color: linear-gradient(to bottom, #009999 1%, #00ff00 100%);
+    -fx-background-radius: 9 9 9 9;
+}
+
+.button3:pressed {
+    -fx-background-color: linear-gradient(to bottom, #009999 1%, #00cc99 100%);
+    -fx-background-radius: 9 9 9 9;
+}
+
+
+/*----------------Update Button---------------*/
+.button4 {
+    -fx-background-color:   linear-gradient(to bottom, #0000ff 1%, #0066ff 100%);
+    -fx-background-radius: 9 9 9 9;
+}
+
+.button4:hover {
+    -fx-background-color: linear-gradient(to bottom, #33ccff 1%, #ccffff 100%);
+    -fx-background-radius: 9 9 9 9;
+}
+
+.button4:pressed {
+    -fx-background-color:linear-gradient(to bottom, #0000ff 1%, #0066ff 100%);
+    -fx-background-radius: 9 9 9 9;
+}
+
+
+/*---------btn Clear--------------*/
+
+.button5 {
+    -fx-background-color:    #2f3542;
+    -fx-background-radius: 9 9 9 9;
+}
+
+.button5:hover {
+    -fx-background-color: linear-gradient(to top, #2d3436 0%, #b2bec3 100%);
+    -fx-background-radius: 9 9 9 9;
+}
+
+.button5:pressed {
+    -fx-background-color: #2f3542;
+    -fx-background-radius: 9 9 9 9;
+}
+
+
+
+
+
+
+
+
+
+
+.textPane{
+    -fx-background-color: white;
+    -fx-border-color: rgba(76, 73, 73, 0.83);
+    -fx-border-radius: 8px;
+}
+.textField{
+    -fx-background-color: white;
+    -fx-prompt-text-fill: #726d6d;
+}
+.textLabel{
+    -fx-background-color: white;
+    -fx-padding: 0 5px 0px 5px;
+    -fx-font-weight: bold;
+    -fx-text-fill: rgba(76, 73, 73, 0.83);;
+}
+
+
+
+
+
+/*Table Styles Start*/
+.table-view:focused{
+    -fx-background-insets: 0px;
+    -fx-border-radius: 5;
+}
+
+.table-view .column-header{
+    -fx-size:30px;
+    -fx-background-color: #7708f5;
+    -fx-font-family:"Consolas";
+    -fx-font-weight: bold;
+    -fx-font-size: 13;
+  /* -fx-background-radius: 5 5 5 5;*/
+
+}
+
+.table-view .column-header .label{
+    -fx-text-fill: white;
+}
+
+.table-view .table-row-cell:empty{
+    -fx-background-color: white;
+}
+.table-view .table-row-cell:selected{
+
+    -fx-background-color:linear-gradient(to right, rgba(119, 8, 245, 0.29), rgba(15, 93, 255, 0.39));
+    -fx-font-weight: bold;
+}
+
+.table-view .table-row-cell:selected *{
+
+    -fx-font-weight: bold;
+    -fx-text-fill: rgb(54, 49, 49);
+}
+
+
+.actionIcon{
+    -fx-cursor: hand;
+    -fx-text-fill: red;
+}
+/* Table styles ends */
+
+
+.noralBackground{
+    -fx-background-color:  linear-gradient(to bottom, #009999 1%, #00cc99 100%);
+}

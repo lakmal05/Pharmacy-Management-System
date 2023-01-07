@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ManagerTransactionDetailscontext" prefHeight="600.0" prefWidth="999.0" styleClass="backgroundColour" stylesheets="@../styles/Manager/ManagerTransactionDetails.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManagerTransactionDetailsController">
+   <children>
+      <AnchorPane layoutX="-1.0" prefHeight="55.0" prefWidth="999.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="69.0" layoutY="5.0" prefHeight="18.0" prefWidth="167.0" text="Transaction Report">
+               <font>
+                  <Font name="Consolas Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="69.0" layoutY="28.0" text="Home &gt; Report" textFill="BLUE">
+               <font>
+                  <Font name="Consolas" size="12.0" />
+               </font>
+            </Label>
+            <ImageView layoutX="23.0" layoutY="11.0">
+               <image>
+                  <Image url="@../images/outline_attach_money_black_24dp.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="846.0" layoutY="19.0" prefHeight="17.0" prefWidth="53.0" text="Date :">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font></Label>
+            <Label layoutX="677.0" layoutY="19.0" text="Time :">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTime" layoutX="724.0" layoutY="19.0" prefHeight="17.0" prefWidth="94.0" textFill="#c61d1d">
+               <font>
+                  <Font name="Consolas" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" layoutX="899.0" layoutY="19.0" prefHeight="17.0" prefWidth="94.0" textFill="#c61d1d">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow height="6.17" radius="6.2925" />
+         </effect>
+      </AnchorPane>
+      <TableView fx:id="tblPayment" layoutX="83.0" layoutY="101.0" prefHeight="195.0" prefWidth="858.0" stylesheets="@../styles/Manager/ManagerTransactionDetails.css">
+        <columns>
+          <TableColumn fx:id="colBillId" prefWidth="75.0" text="Bill ID" />
+          <TableColumn fx:id="colCashierId" prefWidth="76.0" text="Cashier ID" />
+            <TableColumn fx:id="colMedicineName" prefWidth="220.0" text="Medicine Name" />
+            <TableColumn fx:id="colQty" prefWidth="79.0" text="Drug QTY" />
+            <TableColumn fx:id="colPrice" prefWidth="124.0" text="Unit Price" />
+            <TableColumn fx:id="colAmount" prefWidth="95.0" text="Total Amount" />
+            <TableColumn fx:id="colDate" prefWidth="186.0" text="Date" />
+        </columns>
+         <effect>
+            <DropShadow color="#0000007c" height="7.66" radius="2.9575" width="6.17" />
+         </effect>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="559.0" onAction="#btnbackOnAction" prefHeight="25.0" prefWidth="87.0" styleClass="button4" text="BACK" textFill="WHITE">
+         <font>
+            <Font name="Georgia Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="400.0" layoutY="71.0" text="Cahier I Transaction" textFill="RED">
+         <font>
+            <Font name="Consolas Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="400.0" layoutY="318.0" text="Cahier II Transaction" textFill="RED">
+         <font>
+            <Font name="Consolas Bold" size="14.0" />
+         </font>
+      </Label>
+      <TableView layoutX="83.0" layoutY="352.0" prefHeight="195.0" prefWidth="858.0" stylesheets="@../styles/Manager/ManagerTransactionDetails.css">
+         <columns>
+            <TableColumn prefWidth="75.0" text="Bill ID" />
+            <TableColumn prefWidth="76.0" text="Cashier ID" />
+            <TableColumn prefWidth="181.0" text="Medicine Name" />
+            <TableColumn prefWidth="118.0" text="Drug QTY" />
+            <TableColumn prefWidth="108.0" text="Unit Price" />
+            <TableColumn prefWidth="146.0" text="Total Amount" />
+            <TableColumn prefWidth="153.0" text="Date" />
+         </columns>
+         <effect>
+            <DropShadow color="#141414a3" height="6.17" radius="3.3275" width="9.14" />
+         </effect>
+      </TableView>
+      <Label layoutX="807.0" layoutY="573.0" prefHeight="17.0" prefWidth="172.0" text="www.UnionChemists.com">
+         <font>
+            <Font name="Consolas Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

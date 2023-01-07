@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="cashierMainFormcontext" prefHeight="610.0" prefWidth="999.0" styleClass="background" stylesheets="@../styles/Cashier/CashierMainPage.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CashierMainFormController">
+   <children>
+      <AnchorPane layoutY="-4.0" prefHeight="48.0" prefWidth="999.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow height="5.0" radius="2.0" width="5.0" />
+         </effect>
+         <children>
+            <Label fx:id="lblDate" layoutX="886.0" layoutY="19.0" prefHeight="17.0" prefWidth="107.0" textFill="#c61d1d">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font></Label>
+            <Label layoutX="41.0" layoutY="3.0" prefHeight="18.0" prefWidth="107.0" text="Dashbord">
+               <font>
+                  <Font name="Consolas Bold" size="17.0" />
+               </font>
+            </Label>
+            <ImageView layoutX="14.0" layoutY="2.0">
+               <image>
+                  <Image url="@../images/outline_home_black_24dp.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="41.0" layoutY="26.0" text="Home" textFill="BLUE">
+               <font>
+                  <Font name="Consolas" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="367.0" layoutY="6.0" prefHeight="21.0" prefWidth="232.0" text="Union Chemists Pharmacy" textFill="#1b1464">
+               <font>
+                  <Font name="Consolas Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="445.0" layoutY="24.0" prefHeight="18.0" prefWidth="61.0" text="Cashier" textFill="#c61d1d">
+               <font>
+                  <Font name="Consolas Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTime" layoutX="709.0" layoutY="16.0" prefHeight="17.0" prefWidth="119.0" textFill="#c61d1d">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="817.0" layoutY="16.0" prefHeight="17.0" prefWidth="61.0" text="Date  :">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="655.0" layoutY="14.0" prefHeight="17.0" prefWidth="61.0" text="Time  :">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="578.0" layoutY="57.0" prefHeight="141.0" prefWidth="347.0" styleClass="background">
+         <effect>
+            <DropShadow color="#c96b6b" height="38.79" radius="18.895" width="38.79" />
+         </effect>
+         <children>
+            <Label layoutX="31.0" layoutY="29.0" prefHeight="36.0" prefWidth="217.0" style="-fx-background-color: white;" text="   Total Sold Items" textFill="GREEN">
+               <effect>
+                  <DropShadow color="#382f2f" />
+               </effect>
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="76.0" prefHeight="36.0" prefWidth="217.0" style="-fx-background-color: white;" text="   Total Purchase" textFill="RED">
+               <effect>
+                  <DropShadow color="#382f2fd1" />
+               </effect>
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="246.0" layoutY="29.0" prefHeight="36.0" prefWidth="70.0" style="-fx-background-color: white;" text="   1" textFill="GREEN">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#382f2fd1" />
+               </effect>
+            </Label>
+            <Label layoutX="246.0" layoutY="76.0" prefHeight="36.0" prefWidth="70.0" style="-fx-background-color: white;" text=" RS.150" textFill="RED">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#382f2fc7" />
+               </effect>
+            </Label>
+            <Label layoutX="120.0" layoutY="5.0" prefHeight="18.0" prefWidth="107.0" text="Attention">
+               <font>
+                  <Font name="Consolas Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXButton alignment="BOTTOM_CENTER" buttonType="RAISED" layoutX="33.0" layoutY="101.0" onAction="#btnCashierMyDetailsOnAction" prefHeight="79.0" prefWidth="159.0" styleClass="buttonPlaceOrder" text="MY Profile">
+         <font>
+            <Font name="Consolas Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <JFXButton alignment="BOTTOM_CENTER" buttonType="RAISED" layoutX="33.0" layoutY="266.0" onAction="#btnCashierTransactionOnAction" prefHeight="79.0" prefWidth="159.0" styleClass="button1" text="Today Transaction">
+         <font>
+            <Font name="Consolas Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow color="#e4a1e5" />
+         </effect>
+      </JFXButton>
+      <JFXButton alignment="BOTTOM_CENTER" buttonType="RAISED" layoutX="30.0" layoutY="432.0" onAction="#CashierBillingOnAction" prefHeight="79.0" prefWidth="159.0" styleClass="buttonlightBlue" text="BILLING PROSESS" textFill="WHITE">
+         <font>
+            <Font name="Consolas Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <ImageView layoutX="97.0" layoutY="283.0">
+         <image>
+            <Image url="@../images/outline_attach_money_black_24dp.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="BackLogincontext" buttonType="RAISED" layoutX="23.0" layoutY="558.0" onAction="#backtoLoginFormOnAction" prefHeight="33.0" prefWidth="24.0" styleClass="buttonlogout" text="." textFill="RED">
+         <font>
+            <Font name="Consolas Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="794.0" layoutY="582.0" prefHeight="17.0" prefWidth="172.0" text="www.UnionChemists.com">
+         <font>
+            <Font name="Consolas Bold" size="14.0" />
+         </font>
+      </Label>
+      <ImageView layoutX="28.0" layoutY="563.0">
+         <image>
+            <Image url="@../images/twotone_logout_white_24dp.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="97.0" layoutY="448.0">
+         <image>
+            <Image url="@../images/twotone_shopping_cart_white_24dp.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="332.0" layoutY="210.0" prefHeight="369.0" prefWidth="634.0" style="-fx-background-radius: 30;" styleClass="background2">
+         <children>
+            <LineChart fx:id="LineChart" layoutX="13.0" layoutY="15.0" prefHeight="357.0" prefWidth="595.0" styleClass="background2" title="Pharmacy Summary Information">
+              <xAxis>
+                <CategoryAxis fx:id="LineX" prefHeight="28.0" prefWidth="536.0" side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="LineY" prefHeight="264.0" prefWidth="29.0" side="LEFT" />
+              </yAxis>
+            </LineChart>
+         </children>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </AnchorPane>
+      <ImageView layoutX="97.0" layoutY="115.0">
+         <image>
+            <Image url="@../images/outline_person_white_24dp.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

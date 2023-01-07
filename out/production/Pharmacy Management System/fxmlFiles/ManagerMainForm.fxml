@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ManagerDashboardcontext" prefHeight="590.0" prefWidth="999.0" styleClass="background" stylesheets="@../styles/Manager/ManagerMainForm.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManagerMainFormController">
+   <children>
+      <Label layoutX="41.0" layoutY="77.0" prefHeight="18.0" prefWidth="152.0" text="Check Availability" textFill="#c61d1d">
+         <font>
+            <Font name="Consolas Bold" size="15.0" />
+         </font>
+      </Label>
+      <AnchorPane prefHeight="54.0" prefWidth="999.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="48.0" layoutY="5.0" prefHeight="18.0" prefWidth="107.0" text="Dashbord">
+               <font>
+                  <Font name="Consolas Bold" size="17.0" />
+               </font>
+            </Label>
+            <ImageView layoutX="14.0" layoutY="13.0">
+               <image>
+                  <Image url="@../images/outline_home_black_24dp.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="48.0" layoutY="30.0" text="Home" textFill="BLUE">
+               <font>
+                  <Font name="Consolas" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="343.0" layoutY="5.0" prefHeight="21.0" prefWidth="232.0" text="Union Chemists Pharmacy" textFill="#1b1464">
+               <font>
+                  <Font name="Consolas Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="415.0" layoutY="28.0" prefHeight="18.0" prefWidth="44.0" text="ADMIN" textFill="#c61d1d">
+               <font>
+                  <Font name="Consolas Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="705.0" layoutY="17.0" text="Time :">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="859.0" layoutY="19.0" text="Date :">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTime" layoutX="752.0" layoutY="16.0" prefHeight="17.0" prefWidth="93.0" textFill="#c61d1d">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" layoutX="917.0" layoutY="16.0" prefHeight="17.0" prefWidth="82.0" textFill="#c61d1d">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow color="#00000098" />
+         </effect>
+      </AnchorPane>
+      <Label layoutX="791.0" layoutY="77.0" prefHeight="18.0" prefWidth="70.0" text="Report" textFill="#c61d1d">
+         <font>
+            <Font name="Consolas Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="backtoLoginPageContext" buttonType="RAISED" layoutX="14.0" layoutY="534.0" onAction="#backOnAction" prefHeight="36.0" prefWidth="43.0" styleClass="buttonlogout" text="." textFill="RED">
+         <font>
+            <Font name="Georgia Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton alignment="BOTTOM_CENTER" buttonType="RAISED" layoutX="41.0" layoutY="121.0" onAction="#btnMedicineUpdationOnAction" prefHeight="80.0" prefWidth="152.0" styleClass="button1" text="Medicine Updation">
+         <font>
+            <Font name="Consolas Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <ImageView layoutX="99.0" layoutY="142.0">
+         <image>
+            <Image url="@../images/outline_medical_services_black_24dp.png" />
+         </image>
+      </ImageView>
+      <JFXButton alignment="BOTTOM_CENTER" buttonType="RAISED" layoutX="38.0" layoutY="264.0" onAction="#btnSupplaerUpdationOnAction" prefHeight="80.0" prefWidth="159.0" styleClass="buttonlightBlue" text="Supplayer Updation" textFill="WHITE">
+         <font>
+            <Font name="Consolas Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton alignment="BOTTOM_CENTER" buttonType="RAISED" layoutX="785.0" layoutY="401.0" onAction="#btnOrderingItemReportOnAction" prefHeight="80.0" prefWidth="172.0" styleClass="buttonlightBlue" text="Ordeing Item Report" textFill="WHITE">
+         <font>
+            <Font name="Consolas Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton alignment="BOTTOM_CENTER" buttonType="RAISED" layoutX="785.0" layoutY="264.0" onAction="#btnEXPItemOnAction" prefHeight="80.0" prefWidth="159.0" styleClass="button1" text="EXP Item Report">
+         <font>
+            <Font name="Consolas Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton alignment="BOTTOM_CENTER" buttonType="RAISED" layoutX="781.0" layoutY="114.0" onAction="#btnTransactionReportOnAction" prefHeight="80.0" prefWidth="159.0" styleClass="buttonlightBlue" text="Transaction Report" textFill="WHITE">
+         <font>
+            <Font name="Consolas Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton alignment="BOTTOM_CENTER" buttonType="RAISED" layoutX="32.0" layoutY="401.0" onAction="#btnWorkerDetailsOnAction" prefHeight="80.0" prefWidth="159.0" styleClass="button1" text=" Worker Details">
+         <font>
+            <Font name="Consolas Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <ImageView layoutX="96.0" layoutY="420.0">
+         <image>
+            <Image url="@../images/outline_people_black_24dp.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="848.0" layoutY="283.0">
+         <image>
+            <Image url="@../images/outline_report_black_24dp.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="323.0" layoutY="122.0" prefHeight="168.0" prefWidth="353.0" styleClass="background">
+         <effect>
+            <DropShadow color="#cd2b2b" />
+         </effect>
+         <children>
+            <Label layoutX="34.0" layoutY="35.0" prefHeight="36.0" prefWidth="217.0" style="-fx-background-color: white;" text="   Total Sucsess Orders" textFill="GREEN">
+               <effect>
+                  <DropShadow color="#00000040" />
+               </effect>
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="34.0" layoutY="82.0" prefHeight="36.0" prefWidth="217.0" style="-fx-background-color: white;" text="   Total Rejected Orders" textFill="RED">
+               <effect>
+                  <DropShadow color="#00000041" />
+               </effect>
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="249.0" layoutY="35.0" prefHeight="36.0" prefWidth="70.0" style="-fx-background-color: white;" text="   5" textFill="GREEN">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#00000040" />
+               </effect>
+            </Label>
+            <Label layoutX="249.0" layoutY="82.0" prefHeight="36.0" prefWidth="70.0" style="-fx-background-color: white;" text="   4" textFill="RED">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#00000040" />
+               </effect>
+            </Label>
+            <Label layoutX="125.0" layoutY="4.0" text="Attention">
+               <font>
+                  <Font name="Consolas Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView layoutX="24.0" layoutY="540.0">
+         <image>
+            <Image url="@../images/twotone_logout_white_24dp.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="817.0" layoutY="557.0" prefHeight="17.0" prefWidth="172.0" text="www.UnionChemists.com">
+         <font>
+            <Font name="Consolas Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXButton alignment="BOTTOM_CENTER" buttonType="RAISED" layoutX="424.0" layoutY="401.0" onAction="#btnImportOrdersOnAction" prefHeight="80.0" prefWidth="152.0" styleClass="buttonPlaceOrder" text="Place A Order">
+         <font>
+            <Font name="Consolas Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="29.0" fitWidth="31.0" layoutX="484.0" layoutY="417.0">
+         <image>
+            <Image url="@../images/twotone_get_app_black_24dp.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="102.0" layoutY="283.0">
+         <image>
+            <Image url="@../images/twotone_shopping_cart_white_24dp.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="842.0" layoutY="135.0">
+         <image>
+            <Image url="@../images/outline_signal_cellular_alt_white_24dp.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="854.0" layoutY="420.0">
+         <image>
+            <Image url="@../images/outline_shopping_cart_white_24dp.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

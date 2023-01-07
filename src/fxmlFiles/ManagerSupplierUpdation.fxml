@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ManagerSupplierUpdationcontext" prefHeight="567.0" prefWidth="975.0" styleClass="backgroundColour" stylesheets="@../styles/Manager/ManagerSupplierUpdation.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManagerSupplierUpdationController">
+   <children>
+      <AnchorPane prefHeight="43.0" prefWidth="975.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="827.0" layoutY="15.0" prefHeight="17.0" prefWidth="56.0" text="Date :">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font></Label>
+            <Label layoutX="57.0" layoutY="5.0" prefHeight="18.0" prefWidth="135.0" text="Spplier Updation">
+               <font>
+                  <Font name="Consolas Bold" size="15.0" />
+               </font>
+            </Label>
+            <ImageView layoutX="14.0" layoutY="10.0">
+               <image>
+                  <Image url="@../images/outline_shopping_cart_black_24dp.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="57.0" layoutY="24.0" prefHeight="17.0" prefWidth="106.0" text="Home &gt;  Updation" textFill="BLUE">
+               <font>
+                  <Font name="Consolas" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" layoutX="883.0" layoutY="15.0" prefHeight="17.0" prefWidth="78.0" textFill="#c61d1d">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="644.0" layoutY="15.0" prefHeight="17.0" prefWidth="56.0" text="Time : ">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTime" layoutX="700.0" layoutY="15.0" prefHeight="17.0" prefWidth="87.0" textFill="#c61d1d">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <TableView fx:id="tblSupplierUpdation" layoutX="33.0" layoutY="229.0" prefHeight="278.0" prefWidth="908.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="92.0" text="Supplier ID" />
+          <TableColumn fx:id="colName" prefWidth="174.0" text="Supplier Name" />
+            <TableColumn fx:id="colAdress" prefWidth="182.0" text="Adress" />
+            <TableColumn fx:id="colContact" prefWidth="187.0" text="Contact" />
+            <TableColumn fx:id="colSupplyHospitalName" prefWidth="271.0" text="Supply Hospital Name" />
+        </columns>
+         <effect>
+            <DropShadow height="15.07" radius="7.035" width="15.07" />
+         </effect>
+      </TableView>
+      <AnchorPane layoutX="-1.0" layoutY="46.0" prefHeight="218.0" prefWidth="975.0">
+         <children>
+            <AnchorPane layoutX="61.0" layoutY="66.0" prefHeight="32.0" prefWidth="152.0" styleClass="textPane">
+               <children>
+                  <JFXTextField fx:id="txtSupplierId" layoutX="17.0" layoutY="3.0" onKeyReleased="#textFields_Key_Released" prefHeight="27.0" prefWidth="119.0" promptText="   Supplier ID">
+                     <font>
+                        <Font name="Consolas Bold" size="13.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="230.0" layoutY="66.0" prefHeight="30.0" prefWidth="142.0" styleClass="textPane">
+               <children>
+                  <JFXTextField fx:id="txtSupplierName" layoutX="8.0" layoutY="1.0" onKeyReleased="#textFields_Key_Released" prefHeight="27.0" prefWidth="119.0" promptText="   Supplier Name">
+                     <font>
+                        <Font name="Consolas Bold" size="13.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="66.0" layoutY="128.0" prefHeight="30.0" prefWidth="142.0" styleClass="textPane">
+               <children>
+                  <JFXTextField fx:id="txtAddress" layoutX="14.0" layoutY="1.0" onKeyReleased="#textFields_Key_Released" prefHeight="27.0" prefWidth="119.0" promptText="    Address">
+                     <font>
+                        <Font name="Consolas Bold" size="13.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="419.0" layoutY="126.0" prefHeight="24.0" prefWidth="156.0" styleClass="textPane">
+               <children>
+                  <JFXTextField fx:id="txtSupplyHospitalName" layoutX="8.0" layoutY="3.0" onKeyReleased="#textFields_Key_Released" prefHeight="27.0" prefWidth="159.0" promptText="Supply Hospital Name">
+                     <font>
+                        <Font name="Consolas Bold" size="13.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="241.0" layoutY="127.0" prefHeight="25.0" prefWidth="149.0" styleClass="textPane">
+               <children>
+                  <JFXTextField fx:id="txtContact" layoutX="12.0" layoutY="2.0" onKeyReleased="#textFields_Key_Released" prefHeight="27.0" prefWidth="135.0" promptText="   Contact">
+                     <font>
+                        <Font name="Consolas Bold" size="13.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </AnchorPane>
+            <TextField fx:id="lblSearchLabel" layoutX="157.0" layoutY="6.0" prefHeight="29.0" prefWidth="640.0" promptText="                                                       Search  Supplier ID or Supplier Name" style="-fx-background-radius: 10;" styleClass="textPane">
+               <font>
+                  <Font name="Constantia Bold" size="13.0" />
+               </font>
+            </TextField>
+            <JFXButton buttonType="RAISED" layoutX="31.0" layoutY="6.0" onAction="#btnSearchOnAction" prefHeight="25.0" prefWidth="87.0" styleClass="button1" text="Search" textFill="WHITE">
+               <font>
+                  <Font name="Georgia Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnAddId" buttonType="RAISED" layoutX="803.0" layoutY="69.0" onAction="#btnAddtoTableOnAction" prefHeight="29.0" prefWidth="96.0" styleClass="button3" text="INSERT" textFill="WHITE">
+               <font>
+                  <Font name="Georgia Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="803.0" layoutY="128.0" onAction="#btnUpdateOnAction" prefHeight="29.0" prefWidth="96.0" styleClass="button4" text="UPDATE" textFill="WHITE">
+               <font>
+                  <Font name="Georgia Bold" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="525.0" onAction="#btnbackOnAction" prefHeight="25.0" prefWidth="87.0" styleClass="button1" stylesheets="@../styles/Manager/ManagerSupplierUpdation.css" text="BACK" textFill="WHITE">
+         <font>
+            <Font name="Georgia Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="401.0" layoutY="536.0" prefHeight="17.0" prefWidth="172.0" text="www.UnionChemists.com">
+         <font>
+            <Font name="Consolas Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="830.0" layoutY="530.0" onAction="#btnSupplierdeleteOnAction" prefHeight="25.0" prefWidth="87.0" styleClass="button2" text="DELETE" textFill="WHITE">
+         <font>
+            <Font name="Georgia Bold" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
